@@ -1,0 +1,18 @@
+---
+description: LLM Wiki 个人知识库维护规则
+alwaysApply: true
+---
+
+本工作区是一个 LLM Wiki 个人知识库。维护前请先阅读根目录 `CLAUDE.md`。
+
+核心约定：
+- `raw/` 只读，不得修改
+- `wiki/` 由 Agent 维护，使用 `[[wikilinks]]` 交叉引用
+- 工作流：Ingest（导入）/ Query（查询）/ Lint（维护）
+- 每次变更更新 `wiki/index.md` 和 `wiki/log.md`
+- 新资料与旧知识冲突时标注矛盾，不静默覆盖
+
+常用指令：
+- 「导入 raw/xxx.md」→ 执行 Ingest
+- 「查询 wiki 中关于 XXX 的内容」→ 执行 Query
+- 「运行 lint 检查知识库」→ 执行 Lint
