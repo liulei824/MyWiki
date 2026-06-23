@@ -21,8 +21,8 @@
 
 | 语义 | 机制 | 用途 |
 |------|------|------|
-| 同步 | **UB Memory** | Load/Store/Atomic，最大 128TB 共享访存 |
-| 异步 | **URMA** | Jetty 队列，Write/Read/Send/Atomic 等 |
+| 同步 | **[[ub-memory]]** | Load/Store/Atomic，最大 128TB 共享访存 |
+| 异步 | **[[urma]]** | Jetty 队列，Write/Read/Send/Atomic 等 |
 | 集合通信 | **[[ccu]]** | 硬件卸载 AllReduce 等 |
 
 ### 组网
@@ -34,5 +34,5 @@
 ## 相关
 
 - 实体：[[ascend-950]]
-- 概念：[[ccu]]、[[ascend-super-node]]
+- 概念：[[ccu]]、[[ascend-super-node]]、[[urma]]、[[ub-memory]]、[[stars2]]
 - 资料：[[source-ascend-950-npu-whitepaper]]

@@ -19,8 +19,8 @@
 
 - 36 个 AI 子系统（每子系统 1 Cube + 2 Vector）
 - 4 个 AI CPU Cluster（[[linx816]]）
-- 4 个 DVPP 子系统
-- 128MB 统一 L2 Cache
+- 4 个 [[dvpp]] 子系统
+- 128MB 统一 [[l2-cache]]
 - 72 Lane HiLink，整芯片互联带宽峰值 2TB/s
 - [[stars2]] 调度；[[unified-bus]] 2.0 互联
 
@@ -32,9 +32,10 @@
 
 ## 物理架构
 
-多 Die 合封：2×AI Die + 2×IO Die + 片上内存模块，Chiplet **UMA** 统一访存。
+多 Die 合封：2×AI Die + 2×IO Die + 片上内存模块（PR **8** 个 / DT **4** 个），Chiplet **UMA** 统一访存。
 
 ## 相关
 
-- 概念：[[davinci-core-gen3]]、[[unified-bus]]、[[ascend-super-node]]、[[hif8]]、[[nddma]]
+- 概念：[[davinci-core-gen3]]、[[unified-bus]]、[[ascend-super-node]]、[[hif8]]、[[nddma]]、[[memory-hierarchy]]、[[l2-cache]]、[[dvpp]]
+- 综合：[[ascend-950-spec-table]]、[[ascend-950pr-vs-950dt]]
 - 资料：[[source-ascend-950-npu-whitepaper]]

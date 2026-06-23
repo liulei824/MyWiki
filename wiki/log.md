@@ -18,3 +18,15 @@
 - 新建实体: [[ascend-950]], [[cann]], [[linx816]]
 - 新建概念: [[davinci-core-gen3]], [[unified-bus]], [[nddma]], [[stars2]], [[hif8]], [[simd-simt-hybrid]], [[ccu]], [[ascend-super-node]]
 - 更新: raw/index.md, wiki/index.md
+
+## [2026-06-23] lint | 首次健康检查
+- Errors: 0（无死链、无幽灵条目、index 一致）
+- Warnings: 缺反向链接 1 处；薄页面 2 个；白皮书覆盖缺口 15+ 主题
+- 输出: 建议补充清单（见对话）
+
+## [2026-06-23] ingest | Lint 第一批补充（7 项）
+- 来源: [[source-ascend-950-npu-whitepaper]]（深化编译，未改 raw）
+- 新建综合: [[ascend-950-spec-table]], [[ascend-950pr-vs-950dt]]
+- 新建概念: [[memory-hierarchy]], [[l2-cache]], [[dvpp]], [[urma]], [[ub-memory]]
+- 更新: [[ascend-950]], [[unified-bus]], [[stars2]], [[ccu]], wiki/index.md
+- 修复: [[unified-bus]] ↔ [[stars2]] 双向链接
