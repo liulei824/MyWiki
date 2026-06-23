@@ -19,8 +19,23 @@ my-wiki/
 │   ├── concepts/         # 概念页（方法论、模式、技术原理）
 │   ├── syntheses/        # 跨资料综合页
 │   └── qa/               # 有价值的问答归档
-└── CLAUDE.md             # 本文件：行为契约
+├── SCHEMA.md             # 约定与索引规则（Skill 执行前必读）
+├── CLAUDE.md             # 本文件：行为契约
+└── .cursor/skills/       # wiki-ingest / query / lint / scout
 ```
+
+## Skills
+
+本仓库安装了 4 个项目级 Skill（位于 `.cursor/skills/`）：
+
+| Skill | 触发示例 | 作用 |
+|-------|----------|------|
+| `wiki-ingest` | `/wiki-ingest raw/xxx.md` | 导入资料到 wiki |
+| `wiki-query` | `/wiki-query 关于 XXX 的问题` | 基于 wiki 回答 |
+| `wiki-lint` | `/wiki-lint` | 健康检查 |
+| `wiki-scout` | `/wiki-scout 主题` | 发现候选资料 |
+
+执行 Skill 前先读 `SCHEMA.md`。详细步骤见各 Skill 文件。
 
 ## 命名规范
 
@@ -104,49 +119,13 @@ my-wiki/
 
 ## 工作流
 
-### Ingest（导入）
+Ingest / Query / Lint / Scout 的详细步骤见 `.cursor/skills/` 下对应 Skill 文件及 `SCHEMA.md`。
 
-触发：用户将资料放入 `raw/` 并要求导入。
-
-步骤：
-1. 阅读 `raw/` 中的目标文件（必要时查看 `raw/assets/` 图片）
-2. 与用户确认或讨论关键要点（可选，用户未要求时直接执行）
-3. 创建 `wiki/sources/source-<标识>.md` 摘要页
-4. 创建或更新相关 `entities/` 和 `concepts/` 页面
-5. 在所有相关页面间建立 `[[wikilinks]]`
-6. 更新 `wiki/index.md`
-7. 在 `wiki/log.md` 追加记录
-8. 标注与已有内容的**补充**或**矛盾**关系
-
-原则：
-- 优先**更新已有页面**，而非重复创建
-- 新资料与旧知识冲突时，**标注矛盾**，不静默覆盖
-- 一篇资料通常触及 5-15 个 wiki 文件
-
-### Query（查询）
-
-触发：用户就知识库内容提问。
-
-步骤：
-1. 先读 `wiki/index.md` 定位相关页面
-2. 深入阅读相关 wiki 页面
-3. 必要时查阅 `raw/` 原始资料
-4. 综合回答，附引用（页面名或来源）
-5. 若回答有长期价值，询问用户是否归档到 `wiki/qa/` 或 `wiki/syntheses/`
-
-### Lint（维护）
-
-触发：用户要求 lint，或每导入约 15 篇资料后建议执行。
-
-检查项：
-- [ ] 死链（指向不存在的 `[[页面]]`）
-- [ ] 孤立页面（无任何入链或出链）
-- [ ] 页面间矛盾陈述
-- [ ] 被提及但缺少独立页面的重要概念
-- [ ] `index.md` 与实有页面不一致
-- [ ] 过时结论（已被新资料取代但未更新）
-
-修复后更新 `wiki/log.md`。
+简要说明：
+- **Ingest**：raw → wiki 编译，更新 index、log、raw/index
+- **Query**：先 wiki 后 raw，附引用，可选归档 qa/syntheses
+- **Lint**：结构 + 内容健康检查，修复后写 log
+- **Scout**：发现候选资料，只推荐不自动导入
 
 ## index.md 维护规则
 
