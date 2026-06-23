@@ -7,7 +7,7 @@
 
 ## 定义
 
-**STARS2.0**（System Task and Resource Scheduler）是 [[ascend-950]] 全芯片任务与资源调度中心，负责 AIC、AIV、CPU、[[dvpp]]、SDMA、UB、[[ccu]] 等引擎的调度与同步。
+**STARS2.0**（System Task and Resource Scheduler）是 [[ascend-950]] 全芯片任务与资源调度中心，负责 AIC、AIV、CPU、[[dvpp]]、[[sdma]]、UB、[[ccu]] 等引擎的调度与同步。
 
 ## 核心内容
 
@@ -21,5 +21,5 @@
 ## 相关
 
 - 实体：[[ascend-950]]、[[linx816]]
-- 概念：[[ccu]]、[[unified-bus]]、[[dvpp]]、[[l2-cache]]、[[urma]]
+- 概念：[[ccu]]、[[unified-bus]]、[[dvpp]]、[[l2-cache]]、[[urma]]、[[sdma]]
 - 资料：[[source-ascend-950-npu-whitepaper]]

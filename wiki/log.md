@@ -30,3 +30,16 @@
 - 新建概念: [[memory-hierarchy]], [[l2-cache]], [[dvpp]], [[urma]], [[ub-memory]]
 - 更新: [[ascend-950]], [[unified-bus]], [[stars2]], [[ccu]], wiki/index.md
 - 修复: [[unified-bus]] ↔ [[stars2]] 双向链接
+
+## [2026-06-23] ingest | Lint 第二批补充（5 项）
+- 来源: [[source-ascend-950-npu-whitepaper]]（深化编译）
+- 新建概念: [[cube-core]], [[vector-core]], [[cv-fusion]], [[sdma]]
+- 新建问答: [[2026-06-23-950pr-vs-950dt]]
+- 更新: [[davinci-core-gen3]], [[l2-cache]], [[stars2]], [[nddma]], [[simd-simt-hybrid]], [[ascend-950]], wiki/index.md
+
+## [2026-06-23] ingest | Lint 第三批补充
+- 来源: [[source-ascend-950-npu-whitepaper]]（深化编译）
+- 新建综合: [[ascend-glossary]], [[flashattention-optimization]]
+- 新建概念: [[uboe]], [[pcie-gen5]], [[bufferid-sync]], [[chiplet-uma]]
+- 加厚: [[cann]], [[nddma]]
+- 更新: [[unified-bus]], [[ascend-950]], [[davinci-core-gen3]], [[cv-fusion]], wiki/index.md

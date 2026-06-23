@@ -32,10 +32,10 @@
 
 ## 物理架构
 
-多 Die 合封：2×AI Die + 2×IO Die + 片上内存模块（PR **8** 个 / DT **4** 个），Chiplet **UMA** 统一访存。
+详见 [[chiplet-uma]]：2×AI Die + 2×IO Die + 片上内存模块（PR 8 / DT 4）。
 
 ## 相关
 
-- 概念：[[davinci-core-gen3]]、[[unified-bus]]、[[ascend-super-node]]、[[hif8]]、[[nddma]]、[[memory-hierarchy]]、[[l2-cache]]、[[dvpp]]
-- 综合：[[ascend-950-spec-table]]、[[ascend-950pr-vs-950dt]]
+- 概念：[[davinci-core-gen3]]、[[unified-bus]]、[[ascend-super-node]]、[[hif8]]、[[nddma]]、[[memory-hierarchy]]、[[l2-cache]]、[[dvpp]]、[[cube-core]]、[[vector-core]]、[[cv-fusion]]、[[chiplet-uma]]
+- 综合：[[ascend-950-spec-table]]、[[ascend-950pr-vs-950dt]]、[[ascend-glossary]]、[[flashattention-optimization]]
 - 资料：[[source-ascend-950-npu-whitepaper]]

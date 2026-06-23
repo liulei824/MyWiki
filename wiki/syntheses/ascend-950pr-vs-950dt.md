@@ -42,13 +42,12 @@
 | Decode + Prefill 混合推理 | **950DT** |
 | KV Cache 大、内存带宽敏感 | **950DT**（4TB/s） |
 
-## 详细规格
-
 算力与 IO 全表见 [[ascend-950-spec-table]]。
 
 ## 相关
 
 - 实体：[[ascend-950]]
 - 综合：[[ascend-950-spec-table]]
+- 问答：[[2026-06-23-950pr-vs-950dt]]
 - 概念：[[memory-hierarchy]]、[[davinci-core-gen3]]
 - 资料：[[source-ascend-950-npu-whitepaper]]

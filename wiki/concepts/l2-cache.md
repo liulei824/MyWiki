@@ -11,7 +11,7 @@
 
 ## 架构特性
 
-1. **Chiplet UMA**：2 Die 统一地址空间，可跨 Die 访问 L2，具局部亲和性
+1. **[[chiplet-uma]]**：2 Die 统一地址空间，可跨 Die 访问 L2，具局部亲和性
 2. **一致性**：硬件维护双 Die 间 L2 一致性，软件无感
 3. **微架构**
    - 多 Bank 分布式，512B 低位交织（高位异或交织）
@@ -30,7 +30,7 @@
 
 ## CMO（Cache Maintenance Operations）
 
-通过 [[stars2]] 调度的 **SDMA** 实现 L2 驻留策略：
+通过 [[stars2]] 调度的 **[[sdma]]** 实现 L2 驻留策略：
 
 | 操作 | 作用 |
 |------|------|
@@ -51,7 +51,7 @@
 
 ## 相关
 
-- 概念：[[memory-hierarchy]]、[[davinci-core-gen3]]、[[stars2]]
+- 概念：[[memory-hierarchy]]、[[chiplet-uma]]、[[davinci-core-gen3]]、[[stars2]]、[[sdma]]
 - 实体：[[ascend-950]]
 - 综合：[[ascend-950-spec-table]]
 - 资料：[[source-ascend-950-npu-whitepaper]]

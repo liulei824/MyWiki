@@ -15,7 +15,7 @@
 
 - 18×x4 Port，每 Port 最高 112Gbps；UB 双向带宽 **2016GB/s**
 - Scale-up（芯片间）与 Scale-out（节点间）端口可复用
-- 兼容 **PCIe 5.0 x16**（128GB/s 双向）、**UBoE**（2×400Gbps 接以太网）
+- 兼容 **PCIe 5.0 x16**（128GB/s 双向，见 [[pcie-gen5]]）、**[[uboe]]**（2×400Gbps 接以太网）
 
 ### 编程语义
 
@@ -34,5 +34,5 @@
 ## 相关
 
 - 实体：[[ascend-950]]
-- 概念：[[ccu]]、[[ascend-super-node]]、[[urma]]、[[ub-memory]]、[[stars2]]
+- 概念：[[ccu]]、[[ascend-super-node]]、[[urma]]、[[ub-memory]]、[[stars2]]、[[uboe]]、[[pcie-gen5]]
 - 资料：[[source-ascend-950-npu-whitepaper]]

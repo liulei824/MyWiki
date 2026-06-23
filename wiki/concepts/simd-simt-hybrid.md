@@ -18,7 +18,7 @@
 
 - 基本单元 **Vector Function（VF）**，每个 VF 可选 SIMD 或 SIMT 实现
 - 支持 VF 类型间快速切换
-- 与 [[nddma]]、Cube-Vector 融合通路协同，提升 FlashAttention 等算子效率
+- 与 [[cv-fusion]]、Cube-Vector 融合通路协同，提升 FlashAttention 等算子效率
 
 ## 相关
 
