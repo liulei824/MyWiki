@@ -40,10 +40,11 @@ SDMA 支持对 [[l2-cache]] 的维护操作（见白皮书 §4.3.2）：
 
 - 最多并发 **32 个 SDMA 通道**
 - 可与 AIC/AIV/[[ccu]]/[[dvpp]] 等任务并发
+- PTO `TPUT_ASYNC`/`TGET_ASYNC` 默认 SDMA 后端 → [[pto-comm-isa]]
 - AIC/AIV/SDMA 算力切分最多 **16 个资源池**
 
 ## 相关
 
-- 概念：[[stars2]]、[[l2-cache]]、[[memory-hierarchy]]、[[nddma]]
+- 概念：[[stars2]]、[[l2-cache]]、[[memory-hierarchy]]、[[nddma]]、[[pto-comm-isa]]
 - 实体：[[ascend-950]]
 - 资料：[[source-ascend-950-npu-whitepaper]]

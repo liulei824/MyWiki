@@ -20,6 +20,7 @@
 ## 开发者支持
 
 - **全面开源开放**，开放底层能力与代码参考
+- Tile 编程与 NPU 间通信见 [[pto-isa]]、[[pto-comm-isa]]
 - 白皮书「更多参考」指向 **《Ascend C 编程指南》**
 - 与 [[linx816]] AI CPU 协同：控制类任务、CPU 算子可在 Device 侧执行
 
@@ -29,12 +30,12 @@
 |------|----------------|
 | DaVinci AI Core | Ascend C Kernel、[[nddma]]/[[cv-fusion]] 算子 |
 | [[dvpp]] | 媒体预处理 API |
-| [[unified-bus]] / [[ccu]] | 集合通信、分布式运行时 |
+| [[unified-bus]] / [[ccu]] | 集合通信、分布式运行时；PTO 通信 ISA → [[pto-comm-isa]] |
 | [[l2-cache]] Hint/CMO | 算子级 Cache 优化配置 |
 
 ## 相关
 
-- 实体：[[ascend-950]]、[[linx816]]
-- 概念：[[davinci-core-gen3]]、[[nddma]]、[[cv-fusion]]
+- 实体：[[ascend-950]]、[[linx816]]、[[pto-isa]]
+- 概念：[[pto-comm-isa]]、[[davinci-core-gen3]]
 - 综合：[[flashattention-optimization]]、[[ascend-glossary]]
-- 资料：[[source-ascend-950-npu-whitepaper]]
+- 资料：[[source-ascend-950-npu-whitepaper]]、[[source-pto-isa-overview]]

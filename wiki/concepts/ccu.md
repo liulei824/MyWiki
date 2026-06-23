@@ -15,10 +15,11 @@
 - CCUA 含 MemorySlice 存储与 Reduce Unit 计算
 - 支持算法：Broadcast、Reduce Scatter、All Gather、All Reduce、All2All、All2Allv
 - 数据搬运可走 [[urma]]（远端 DRAM ↔ 本端 MemorySlice）
+- PTO 集合通信 `*_ccu` 测试路径与 CCU 硬件协同 → [[pto-comm-isa]]
 - 与 [[unified-bus]] 协同，释放 AI Core 算力
 
 ## 相关
 
-- 概念：[[unified-bus]]、[[stars2]]、[[ascend-super-node]]、[[urma]]、[[ub-memory]]
+- 概念：[[unified-bus]]、[[stars2]]、[[ascend-super-node]]、[[urma]]、[[ub-memory]]、[[pto-comm-isa]]
 - 实体：[[ascend-950]]
 - 资料：[[source-ascend-950-npu-whitepaper]]

@@ -43,3 +43,11 @@
 - 新建概念: [[uboe]], [[pcie-gen5]], [[bufferid-sync]], [[chiplet-uma]]
 - 加厚: [[cann]], [[nddma]]
 - 更新: [[unified-bus]], [[ascend-950]], [[davinci-core-gen3]], [[cv-fusion]], wiki/index.md
+
+## [2026-06-24] ingest | pto-isa 代码仓（通信指令）
+- 来源: 外部镜像 `/Users/liulei/cann-code/pto-isa` @ 6321d9a2
+- 新建: [[cann-ecosystem-manifest]]
+- 新建实体: [[pto-isa]]
+- 新建概念: [[pto-comm-isa]]
+- 新建资料: [[source-pto-isa-overview]], [[source-pto-isa-comm-isa]]
+- 更新: [[cann]], [[urma]], [[sdma]], [[ccu]], raw/index.md, wiki/index.md

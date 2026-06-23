@@ -35,13 +35,13 @@ RTP 适合可靠性要求高的场景；CTP 适合追求带宽与低开销的场
 
 URMA 异步能力可基于 **Ethernet 物理层**与外部互通（见 [[unified-bus]] UBoE）。
 
-## 与 CCU 的关系
+- PTO `TPUT_ASYNC`/`TGET_ASYNC` 的 URMA 后端（A5）→ [[pto-comm-isa]]
 
 [[ccu]] 集合通信中的数据搬运可调用 URMA 完成远端 DRAM ↔ 本端 MemorySlice 搬移。
 
 ## 相关
 
-- 概念：[[unified-bus]]、[[ub-memory]]、[[ccu]]、[[stars2]]
+- 概念：[[unified-bus]]、[[ub-memory]]、[[ccu]]、[[stars2]]、[[pto-comm-isa]]
 - 实体：[[ascend-950]]
 - 综合：[[ascend-950-spec-table]]
 - 资料：[[source-ascend-950-npu-whitepaper]]
