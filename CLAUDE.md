@@ -9,7 +9,9 @@
 
 ```
 my-wiki/
-├── raw/                  # 原始资料（只读，LLM 不得修改）
+├── raw/                  # 原始资料（只读，LLM 不得修改已有文件）
+│   ├── pto-isa/          # PTO-ISA 自写笔记
+│   ├── cann-open-source-repos.md  # CANN 仓索引与代码回查约定
 │   └── assets/           # 图片、附件
 ├── wiki/                 # LLM 维护的结构化知识页面
 │   ├── index.md          # 内容目录（查询入口）
@@ -126,6 +128,10 @@ Ingest / Query / Lint / Scout 的详细步骤见 `.cursor/skills/` 下对应 Ski
 - **Query**：先 wiki 后 raw，附引用，可选归档 qa/syntheses
 - **Lint**：结构 + 内容健康检查，修复后写 log
 - **Scout**：发现候选资料，只推荐不自动导入
+
+## 代码回查
+
+wiki/raw 不足以回答 CANN 实现细节时，读 `raw/cann-open-source-repos.md`：先搜本地 `code/`，再无则 git clone。详见 `SCHEMA.md`。
 
 ## index.md 维护规则
 

@@ -15,6 +15,8 @@
 
 ```
 raw/                    # 原始资料 + assets/
+  pto-isa/              # PTO-ISA 自写笔记与摘录（非代码镜像）
+  cann-open-source-repos.md  # CANN 开源仓索引与代码回查约定（Agent 必读参考）
 wiki/
   index.md              # 查询入口
   log.md                # 操作日志
@@ -84,6 +86,16 @@ wiki/
 | Query | `wiki-query` | 基于 wiki 回答 |
 | Lint | `wiki-lint` | 结构与健康检查 |
 | Scout | `wiki-scout` | 发现候选资料 |
+
+## 代码回查（wiki/raw 不足时）
+
+涉及 CANN/PTO **实现细节**且 wiki 与 raw（含 `raw/pto-isa/`）信息不足时，Agent **必须**读 `raw/cann-open-source-repos.md` 并按其中「代码回查流程」执行：
+
+1. 先查本地 `code/` 是否已有对应仓库
+2. 本地无则 `git clone` 到约定路径（只读使用，不改源码）
+3. 回答引用具体文件路径；有价值结论建议用户摘要进 raw 再 ingest
+
+**禁止**：将完整代码仓镜像/submodule 放入 MyWiki；禁止跳过 wiki/raw 直接读代码。
 
 ## 边界
 

@@ -5,7 +5,7 @@ alwaysApply: true
 
 本工作区是一个 LLM Wiki 个人知识库。
 
-**必读文件**：`SCHEMA.md`（约定）、`CLAUDE.md`（模板与边界）
+**必读文件**：`SCHEMA.md`（约定）、`CLAUDE.md`（模板与边界）、`raw/cann-open-source-repos.md`（CANN 仓索引与代码回查）
 
 **Skills**（`.cursor/skills/`，按需显式触发）：
 
@@ -18,6 +18,8 @@ alwaysApply: true
 
 核心约定：
 - `raw/` 已有文件只读；Ingest 可新增 raw 文件
+- `raw/pto-isa/` 存放 PTO 自写笔记；`raw/cann-open-source-repos.md` 登记 CANN 仓与代码回查流程
+- wiki/raw 找不到代码细节时：先搜本地 `code/`，再无则 git clone（见 cann-open-source-repos.md）
 - `wiki/` 由 Agent 维护，使用 `[[wikilinks]]`
 - 每次变更更新 `wiki/index.md`、`wiki/log.md`（Ingest 还需 `raw/index.md`）
 - 冲突标注矛盾，不静默覆盖

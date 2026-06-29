@@ -15,17 +15,18 @@ disable-model-invocation: true
 ```
 - [ ] 1. 读 wiki/index.md 定位相关页面
 - [ ] 2. 读所有相关 wiki 页面（sources/ entities/ concepts/ syntheses/ qa/）
-- [ ] 3. 若 wiki 信息不足，再查 raw/ 原始资料
-- [ ] 4. 综合回答，明确标注信息来源（[[页面名]] 或 raw 文件）
-- [ ] 5. 区分「wiki 中的内容」与「训练数据中的常识」
-- [ ] 6. 若回答有长期价值，询问是否归档到 wiki/qa/ 或 wiki/syntheses/
+- [ ] 3. 若 wiki 信息不足，再查 raw/ 原始资料（含 raw/pto-isa/）
+- [ ] 4. 若仍缺代码实现细节，读 raw/cann-open-source-repos.md，按「代码回查流程」搜本地 code/ 或 clone 源码
+- [ ] 5. 综合回答，明确标注信息来源（[[页面名]]、raw 文件或源码路径）
+- [ ] 6. 区分「wiki 中的内容」与「训练数据中的常识」与「源码回查结论」
+- [ ] 7. 若回答有长期价值，询问是否归档到 wiki/qa/、wiki/syntheses/ 或摘要进 raw/pto-isa/
 ```
 
 ## 回答格式
 
 - 先给结论，再展开
 - 引用格式：`（见 [[概念名]]）` 或 `（见 source-xxx）`
-- wiki 无足够信息时，明确说明缺口，建议 ingest 哪些资料
+- wiki 无足够信息时，明确说明缺口；涉及 CANN 代码细节时走 `raw/cann-open-source-repos.md` 回查流程
 
 ## 原则
 
